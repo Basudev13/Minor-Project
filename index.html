@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITS Pilani</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: black;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            white-space: nowrap;
+        }
+
+        .logo {
+            height: 65px;
+            width: 65px;
+            border-radius: 60%;
+            margin-right: 10px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: red;
+            padding: 5px 0;
+            color: red;
+            border-radius: 5px;
+        }
+
+        .nav div, .nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            height: 570px;
+            overflow: hidden;
+        }
+
+        .content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                font-size: 1.2rem;
+            }
+
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav div, .nav a {
+                margin: 5px 0;
+            }
+        }
+
+        /* Scrolling effect */
+        .scroll {
+            display: flex;
+            overflow: hidden;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+            gap: 50px;
+            font-size: 1.2rem;
+        }
+
+        .scroll-item {
+            display: inline-block;
+            padding: 0 20px;
+            animation: scroll 5s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div style="display: flex; align-items: center;">
+            <img src="https://w7.pngwing.com/pngs/570/610/png-transparent-birla-institute-of-technology-and-science-pilani-dubai-campus-birla-institute-of-technology-science-pilani-hyderabad-birla-institute-of-technology-science-pilani-goa-student-emblem-people-logo.png" alt="BITS Logo" class="logo">
+            <div>BITS Pilani</div>
+        </div>
+        <div class="scroll">
+            <div class="scroll-item">An</div>
+            <div class="scroll-item">Institution</div>
+            <div class="scroll-item">of</div>
+            <div class="scroll-item">Eminence</div>
+        </div>
+    </div>
+    
+    <nav class="nav">
+        <div><a href="index.html"><b>Home</b></a></div>
+         <div><a href="Registration.html"><b>Registration</b></a></div>
+       
+        <div><a href="contactus.html"><b>Contact Us</b></a></div>
+        <div><a href="aboutus.html"><b>About Us</b></a></div>
+        <div><a href="Login.html"><b>Login</b></a></div>
+    </nav>
+    
+    <div class="content">
+        <img src="https://web.bits-pilani.ac.in/Uploads/Pilani/pilanimanagementadmin/Gallery/2019-3-3--0-46-32-245_43375021_2258639734354556_1707337409550614528_n.jpg" alt="BITS Pilani Campus">
+    </div>
+</body>
+</html>

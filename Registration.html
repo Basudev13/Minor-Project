@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        *{
+            padding: 0%;
+        }
+        
+        html,body{
+            height: 100%;
+            width: 100%;
+            background-color: blanchedalmond;
+        }
+        div{
+            border: 2px solid black;
+            width: 50%;
+            height: 50%;
+            background-color: #e2ab32d2;
+
+            
+        }
+        button:hover{
+            background-color: red;
+        }
+        @keyframes colorChange{
+            0%{
+                color: black;
+            }
+            25%{
+                color: red;
+            }
+            50%{
+                color: blue;
+            }
+            75%{
+                color: yellow;
+            }
+            100%{
+                color: black;
+            }
+        }
+        h2{
+            animation: colorChange 7s infinite;
+        }
+        input{
+            width: 60%
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form action="NewServlet" method="post">
+            <div>
+                <h2>Registration Form</h2>
+                
+                 <input type="text" name="Firstname" id="input" placeholder="Firstname">
+                <br><br>
+                <input type="text" name="Lastname" id="input" placeholder="Lastname">
+                <br><br>
+                <input type="text" name="Username" id="input" placeholder="Username">
+                <br><br>
+                <input type="number" name="Age" id="input" placeholder="Age:">
+                <br><br>
+                <input type="number" name="MobileNo" id="input" placeholder="MobileNo:">
+                <br><br>
+                <input type="email" name="Email" id="input" placeholder="Email">
+                <br><br>
+                <input type="password" name="Password" id="input" placeholder="Password:">
+                <br><br>
+                <input type="text" name="Address" id="input" placeholder="Address">
+                <br><br>
+                <button type="submit" name="register" id="input" style="margin-bottom: 10px; width: 50%; padding: 3px; text-transform: capitalize; font-weight: bolder;  ">register</button>
+                <br>
+                <a href="Login.html" style="margin-top: 10px;">Already have an account</a>
+            </div>
+
+        </form>
+    </center>
+</body>
+</html>
